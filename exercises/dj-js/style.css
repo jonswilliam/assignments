@@ -1,0 +1,13 @@
+body {
+    background-color: black;
+}
+
+#djSquare {
+    background-color: antiquewhite;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 500px;
+    cursor: pointer;
+}

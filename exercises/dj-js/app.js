@@ -1,36 +1,36 @@
 const djSquare = document.getElementById("djSquare")
 
+djSquare.addEventListener("mouseover", mouseOver)
 function mouseOver() {
     djSquare.style.backgroundColor = "blue"
     console.log("Color was changed to blue!")
 }
-djSquare.addEventListener("mouseover", mouseOver)
 
+djSquare.addEventListener("mousedown", mouseDown)
 function mouseDown() {
     djSquare.style.backgroundColor = "red"
     console.log("Color was changed to red!")
 }
-djSquare.addEventListener("mousedown", mouseDown)
 
+djSquare.addEventListener("mouseup", mouseUp)
 function mouseUp() {
     djSquare.style.backgroundColor = "yellow"
     console.log("Color was changed to yellow!")
 }
-djSquare.addEventListener("mouseup", mouseUp)
 
+djSquare.addEventListener("dblclick", doubleClick)
 function doubleClick() {
     djSquare.style.backgroundColor = "green"
     console.log("Color was changed to green!")
 }
-djSquare.addEventListener("dblclick", doubleClick)
 
+window.addEventListener("wheel", scrollWheel)
 function scrollWheel() {
     djSquare.style.backgroundColor = "orange"
     console.log("Color was changed to orange!")
 }
-window.addEventListener("wheel", scrollWheel)
 
-
+window.addEventListener("keypress", keyFunk)
 function keyFunk(KeyboardEvent) {
     const key = KeyboardEvent.key
     if (key === "b") {
@@ -50,4 +50,3 @@ function keyFunk(KeyboardEvent) {
         console.log("Color was changed to orange!")
     }
 }
-window.addEventListener("keypress", keyFunk)

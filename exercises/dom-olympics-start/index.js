@@ -22,11 +22,10 @@ const secondRightMessage = rightMessages[1].textContent = "You don't need permis
 const clearMessages = document.getElementById("clear-button")
 clearMessages.addEventListener("click", clearButton)
 function clearButton() {
-    const messages = document.getElementsByClassName("messages")[0]
+    const messages = document.querySelector(".messages")
     messages.textContent = ""
 }
 
-// const count = 0
 // const inputForm = document.getElementById("input")
 // const send = document.querySelector("form")
 // send.addEventListener("submit", addMessage)
@@ -34,13 +33,12 @@ function clearButton() {
 //     event.preventDefault()
 //     const textValueDiv = document.createElement("div")
 //     textValueDiv.innerHTML = inputForm.value
-//     count++
-//     if (count % 2 == 1) {
-//         textValueDiv.classList.add("left")
-//     } else {
+//     if (messages[i] % 2 == 0) {
 //         textValueDiv.classList.add("right")
+//     } else {
+//         textValueDiv.classList.add("left")
 //     }
-//     document.querySelector(".messages").appendChild(textValueDiv)
+//     messages.appendChild(textValueDiv)
 //     inputForm.value = ""
 // }
 

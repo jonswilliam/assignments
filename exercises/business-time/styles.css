@@ -1,0 +1,68 @@
+body {
+    background-color: black;
+}
+footer {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+.mainLogo {
+    display: block;
+    border: 10px white;
+    padding-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10%;
+    width: 10%;
+}
+.navHeader {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 60px;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.aboutParagraph {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding-bottom: 100px;
+}
+.photos {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 15px;
+    padding-bottom: 100px;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 1024px) {
+    .photos {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+            ". s c u ."
+            ". a a st st";
+    }
+    .scowl {
+        grid-area: s;
+    }
+    .cannibalCorpse {
+        grid-area: c;
+    }
+    .untoOthers {
+        grid-area: u;
+    }
+    .archEnemy {
+        grid-area: a;
+    }
+    .steelPanther {
+        grid-area: st;
+    }  
+}

@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(233, 124, 124)
+}
+
+#header {
+    border: 5px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+	height: 120px;
+	display: grid;
+    margin: 10px;
+    background-color: rgb(145, 197, 216)
+}
+
+#header > div {
+    text-align: center
+}
+
+#mario {
+    font-weight: bold;
+    font-size: 40px
+}
+
+#slogan {
+    font-size: 16px
+}
+
+#operations > div {
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white
+}
+
+footer {
+    border: 5px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+	height: 60px;
+	display: grid;
+    margin: 10px;
+    background-color: rgb(145, 197, 216)
+}

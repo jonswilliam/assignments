@@ -1,0 +1,62 @@
+{
+    "appetizers": {
+        "bonelessWings": {
+            "name": "Boneless Wings",
+            "ingredients": ["Breaded Boneless Chicken Chunks"],
+            "description": "Delicious boneless wings! Pick quantity and sauce on the side"
+        },
+        "potatoWedges": {
+            "name": "Potato Wedges",
+            "ingredients": ["Cut Potatoes"],
+            "description": "Crispy and golden brown potato wedges! Pick quantity"
+        }
+    },
+    "coldSandwiches": {
+        "turkeySub": {
+            "name": "Turkey Sub",
+            "ingredients": ["Bread", "Oven Roasted Turkey", "Cheese", "Sauce", "Lettuce", "Tomato", "Onions"],
+            "description": "Choice of bread, cheese, and sauce. Add more for a small but VERY FAIR fee"
+        },
+        "hamSub": {
+            "name": "Ham and Cheese Sub",
+            "ingredients": ["Bread", "Honey Baked Ham", "Cheese", "Sauce", "Lettuce", "Tomato", "Onions"],
+            "description": "Choice of bread, cheese, and sauce. Add more for a small but VERY FAIR fee"
+        }
+    },
+    "hotSandwiches": {
+        "chickenTendersSub": {
+            "name": "Chicken Tenders Sub",
+            "ingredients": ["Bread", "Chicken Tenders", "Bacon", "Guacamole", "Cheese", "Sauce", "Lettuce", "Tomato", "Onions"],
+            "description": "Choice of bread, cheese, and sauce. Add more for a small but VERY FAIR fee"
+        },
+        "phillyCheesesteakSub": {
+            "name": "Philly Cheesesteak Sub",
+            "ingredients": ["Bread", "Chip Steak", "Bacon", "Cheese", "Sauce", "Fried Peppers", "Fried Onions"],
+            "description": "Choice of bread, cheese, and sauce. Add more for a small but VERY FAIR fee"
+        }
+    },
+    "desserts": {
+        "cheesecake": {
+            "name": "New York Style Cheesecake",
+            "ingredients": ["Graham Cracker Base", "Fresh Cheese", "Eggs", "Sugar"],
+            "description": "Since we know you got no room for dessert after eating your fill, take some delicious cheesecake to go!"
+        },
+        "churros": {
+            "name": "Churros",
+            "ingredients": ["Fried Dough", "Salt", "Cinnamon"],
+            "description": "If you happen to lack good taste and don't opt for the cheesecake, fear not! We have a tasty alternative that you're bound to love!"
+        }
+    },
+    "drinks": {
+        "greenTea": {
+            "name": "Green Tea",
+            "ingredients": ["Green Tea, Water, Honey, Ginseng"],
+            "description": "The one and only, Arizona Green Tea. Accept no substitutes"
+        },
+        "lemonade": {
+            "name": "Lemonade",
+            "ingredients": ["Lemon Juice", "Water", "Sugar"],
+            "description": "Homemade, just like momma used to make!"
+        }
+    }
+}

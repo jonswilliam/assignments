@@ -1,0 +1,173 @@
+/* @import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic); */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(22, 71, 75)
+}
+
+.input {
+    background: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    width: 350px;
+    height: 60px
+}
+.button{
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    width: 70px;
+    height: 66px
+}
+
+.container {
+    margin-top: 10px;
+    display: grid;
+    grid-template-rows: 300px 900px 700px 700px 300px 180px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+        "box1 box2"
+        "box3 box4"
+        "box5 box6"
+        "box7 box8"
+        "box9 box9"
+        "box10 box10"
+}
+.container > div {
+    display: flex;
+    align-items: center;
+}
+
+.mainHeader {
+    grid-area: box1;
+    font-size: 50px;
+    padding-left: 300px;
+    color: white;
+    background-image: url("http://www.csszengarden.com/214/huntington.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+.viewDesigns {
+    grid-area: box2;
+    justify-content: center;
+    background-image: url("http://www.csszengarden.com/214/huntington.jpg");
+    background-size: cover;
+    background-position: center
+}
+.road {
+    grid-area: box3;
+    color: rgb(22, 71, 75);
+    padding-left: 200px;
+    padding-right: 100px;
+    background-color: white
+}
+.authors {
+    grid-area: box4;
+    padding-left: 100px;
+    padding-right: 200px;
+    color: rgb(22, 71, 75);
+    background-color: rgb(208, 223, 218)
+}
+.participation {
+    grid-area: box5;
+    color: rgb(22, 71, 75);
+    padding-left: 200px;
+    padding-right: 100px;
+    background-color: rgb(186, 207, 197);
+}
+.links {
+    grid-area: box6;
+    padding-left: 100px;
+    padding-right: 200px;
+    color: rgb(22, 71, 75);
+    background-color: rgb(151, 203, 179);
+}
+.requirements {
+    grid-area: box7;
+    color: rgb(22, 71, 75);
+    padding-left: 200px;
+    padding-right: 100px;
+    background-color: white
+}
+.blank {
+    grid-area: box8;
+    background-color: rgb(208, 223, 218)
+}
+.footer1 {
+    grid-area: box9;
+    color: white;
+    font-size: 35px;
+    justify-content: center;
+    background-image: url("http://www.csszengarden.com/214/huntington.jpg");
+    background-size: cover;
+    background-position: center
+}
+.footer {
+    grid-area: box10;
+    background-color: rgb(22, 71, 75);
+}
+
+@media (max-width: 900px) {
+    .container {
+        grid-template-rows: 150px 70px 730px 600px 550px 180px 120px 300px 180px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "box1"
+            "box2"
+            "box3"
+            "box4"
+            "box5"
+            "box6"
+            "box7"
+            "box8"
+            "box9"
+    }
+    .container > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0
+    }
+    .participation {
+        grid-area: box4
+    }
+    .requirements {
+        grid-area: box5
+    }
+    .footer1 {
+        grid-area: box6
+    }
+    .footer {
+        grid-area: box7
+    }
+    /* use this media query to help these two cells drop to the bottom when screens are smaller */
+    .authors {
+        grid-area: box8
+    }
+    .links {
+        grid-area: box9
+    }
+}
+
+/* FLEX */
+/* use flexbox to make the icons behave like css zen garden's social icons */
+.icons {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+}
+
+.icons > div {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+}

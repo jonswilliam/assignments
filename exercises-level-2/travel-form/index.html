@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Volimetrocious Airlines</title>
+</head>
+<body>
+    <div id="header">
+        Welcome to Volimetrocious Airlines!
+    </div>
+    <form name="travelForm">
+        <div id="formData">
+            <div id="basic">
+                <label for="">First Name</label>
+                <input name="firstName">
+                <br>
+                <label for="">Last Name</label>
+                <input name="lastName">
+                <br>
+                <label for="">Age</label>
+                <input type="number" name="age">
+                <br>
+            </div>
+            <div id="gender">
+                <hi>Please Specify Gender</hi>
+                <br>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="Male" id="male">
+                <br>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" value="Female" id="female">
+                <br>
+                <label for="omit">Omit</label>
+                <input type="radio" name="gender" value="Omit" id="omit">
+                <br>
+            </div>
+            <div id="destination">
+                <label for="">What is Your Destination?</label>
+                <select name="travelLocation">
+                    <option value="London">London</option>
+                    <option value="New York City">New York City</option>
+                    <option value="Rome">Rome</option>
+                </select>
+                <br>
+            </div>
+            <div id="diet">
+                <label for="">Do You Have Any Dietary Restrictions?</label>
+                <br>
+                <label for="vegan">Vegan</label>
+                <input class="diet" type="checkbox" name="diet" id="vegan" value="Vegan">
+                <br>
+                <label for="lactose">Lactose-free</label>
+                <input class="diet" type="checkbox" name="diet" id="lactose" value="Lactose-free">
+                <br>
+                <label for="kosher">Kosher</label>
+                <input class="diet" type="checkbox" name="diet" id="kosher" value="Kosher">
+                <br>
+            </div>
+            <button id="submit">Submit</button>
+        </div>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>

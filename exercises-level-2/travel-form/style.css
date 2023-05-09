@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(68, 104, 232)
+}
+
+#header {
+    border: 5px solid rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    color: white;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    margin: 30px 100px 40px;
+    background-color: rgb(122, 124, 122)
+}
+
+#formData > div {
+    border: 5px solid rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    margin: 20px 600px;
+    background-color: rgb(122, 124, 122)
+}

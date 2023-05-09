@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(132, 132, 132)
+}
+
+#grid-container {
+    margin: 100px 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 40px;
+    grid-template-areas:
+        "box1 box4"
+        "box2 box5"
+        "box3 box6";
+    justify-content: center;
+    align-items: center
+}
+
+#grid-container > div {
+    border-radius: 10px;
+    height: 200px
+}
+
+#box1 {
+    background-color: yellow;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    grid-area: box1
+}
+#box1:hover {
+	background-color: rgb(32, 246, 39);
+	width: 900px
+}
+
+#box2 {
+    background-color: blue;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    grid-area: box2
+}
+#box2:hover {
+	background-color: rgb(231, 27, 231);
+	height: 300px
+}
+
+#box3 {
+    background-color: red;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    grid-area: box3
+}
+#box3:hover {
+	background-color: rgb(25, 208, 240);
+	opacity: 0.2
+}
+
+#box4 {
+    background-color: purple;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    grid-area: box4
+}
+#box4:hover {
+	background-color: rgb(181, 198, 0);
+	box-shadow: 2px 2px 4px 10px black
+}
+
+#box5 {
+    background-color: rgb(240, 119, 5);
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: step-end;
+    grid-area: box5
+}
+#box5:hover {
+	background-color: rgb(141, 118, 245);
+	border-radius: 50px
+}
+
+
+#box6 {
+    background-color: green;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    grid-area: box6;
+}
+#box6:hover {
+	background-color: rgb(95, 7, 7);
+	border: 20px solid white
+}

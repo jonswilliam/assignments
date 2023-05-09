@@ -30,6 +30,9 @@ function colossalAdventure() {
             const dealDamage = Math.floor(Math.random() * 11) + 20
             console.log(`You've dealt ${dealDamage} damage to the ${enemy}.`)
             enemyHP -= dealDamage
+            const incurDamage = Math.floor(Math.random() * 10) + 15
+            player.hp -= incurDamage
+            console.log(`You've been dealt ${incurDamage} damage. Current HP is ${player.hp}.`)
             if (enemyHP <= 0) {
                 player.hp += Math.floor(Math.random() * 6) + 5
                 console.log(`You've vanquished the ${enemy}! You loot their body and recover some of your health. Current HP is ${player.hp}.`)
@@ -38,21 +41,9 @@ function colossalAdventure() {
                 if (printPrompt.toLowerCase() === "y") {
                     printStats()
                 }
-                while (player.hp > 0) {
-                const movement = readlineSync.keyIn("Press 'w' to walk: ", {limit: "w"})
-                const encounter = Math.random() < 0.4
-                if (encounter) {
-                    colossalAdventure()
-                } else {
-                    console.log("You traverse the terrain with a look of determination.")
-                }
-                }
-                break
             }
-            const incurDamage = Math.floor(Math.random() * 10) + 15
-            player.hp -= incurDamage
-            console.log(`You've been dealt ${incurDamage} damage. Current HP is ${player.hp}.`)
             if (player.hp <= 0) {
+                console.log("You've drawn your last breath, adventurer. Welcome to oblivion.")
                 process.exit()
             }
         }

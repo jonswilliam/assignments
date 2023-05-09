@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(161, 211, 232)
+}
+
+#header {
+    border: 5px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    margin: 30px 20px 40px;
+    background-color: rgb(183, 215, 178)
+}
+
+#operations > div {
+    border: 5px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    margin: 20px 500px 40px;
+    background-color: rgb(236, 215, 120)
+}

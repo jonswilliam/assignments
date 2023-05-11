@@ -70,15 +70,26 @@ function listData(data) {
         const completedCheckbox = document.createElement("input")
         completedCheckbox.type = "checkbox"
         completedCheckbox.addEventListener("click", event => {
-            const completed = event.target.checked
-            axios.put(`https://api.vschool.io/jonwilliam/todo/${data[i]._id}`, {
-                completed: completed
+            console.log(completedCheckbox)
+            if (completedCheckbox.checked === false) {
+                newListItem.style.textDecoration = "none"
+                axios.put(`https://api.vschool.io/jonwilliam/todo/${data[i]._id}`, {
+                    completed: false
+                })
+                .then(response => {
+                    console.log(response.data)
+                })
+                .catch(error => console.log(error))
+            } else {
+                newListItem.style.textDecoration = "line-through"
+                axios.put(`https://api.vschool.io/jonwilliam/todo/${data[i]._id}`, {
+                completed: true
             })
             .then(response => {
                 console.log(response.data)
-                checkbox.checked = completed
             })
             .catch(error => console.log(error))
+            }
         })
         const concert = document.createElement("label")
         concert.textContent = "Seen in Concert??"
@@ -99,6 +110,7 @@ function listData(data) {
         document.getElementById("list").append(newListItem)
         if (data[i].completed === true) {
             newListItem.style.textDecoration = "line-through"
+            completedCheckbox.checked = true
         }
     }
 }

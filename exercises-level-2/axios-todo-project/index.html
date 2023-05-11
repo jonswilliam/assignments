@@ -6,20 +6,36 @@
     <title>Axios Project: Current Favorite Albums</title>
 </head>
 <body>
+    <div id="header">
+        <div">
+            Silly Willy's Very Silly Musical List
+        </div>
+    </div>
     <form name="toDoForm">
-        <input name="title" placeholder="Band - Album Name">
-        <br>
-        <input name="description" placeholder="Brief Description">
-        <br>
-        <input name="price" placeholder="Price">
-        <br>
-        <input name="imgUrl" placeholder="Paste Album Image URL Here">
-        <br>
-        <button>Submit</button>
+        <div id="welcome">
+            Welcome! Use this app to keep track of your current favorite albums
+        </div>
+        <div id="formContainer">
+            <div id="title">
+                <input name="title" placeholder="Band - Album Name">
+            </div>
+            <div id="description">
+                <input name="description" placeholder="Brief Description">
+            </div>
+            <div id="price">
+                <input name="price" placeholder="Album Price">
+            </div>
+            <div id="image">
+                <input name="imgUrl" placeholder="Paste Album Image URL Here">
+            </div>
+            <div id="button">
+                <button>Submit</button>
+            </div>
+        </div>
     </form>
     <div>
-        <ul id="list">
-        </ul>
+        <div id="list">
+        </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.js"></script>
     <script src="app.js"></script>

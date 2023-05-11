@@ -146,7 +146,6 @@ body {
     .footer {
         grid-area: box7
     }
-    /* use this media query to help these two cells drop to the bottom when screens are smaller */
     .authors {
         grid-area: box8
     }

@@ -7,13 +7,17 @@ function getData() {
 function listData(data) {
     clearList()
     for (let i = 0; i < data.length; i++) {
-        const newListItem = document.createElement("li")
+        const newListItem = document.createElement("div")
+        newListItem.classList.add("listContainer")
         const titleDiv = document.createElement("div")
+        titleDiv.classList.add("title")
         titleDiv.textContent = data[i].title
         const descriptionDiv = document.createElement("div")
+        descriptionDiv.classList.add("description")
         descriptionDiv.textContent = data[i].description
         const priceDiv = document.createElement("div")
-        priceDiv.textContent = data[i].price
+        descriptionDiv.classList.add("price")
+        priceDiv.textContent = `$ ${data[i].price}`
         const albumImg = document.createElement("img")
         albumImg.src = data[i].imgUrl
         albumImg.alt = data[i].title
@@ -27,7 +31,7 @@ function listData(data) {
             newDescriptionDiv.value = descriptionDiv.textContent
             newListItem.replaceChild(newDescriptionDiv, descriptionDiv)
             const newPriceDiv = document.createElement("input")
-            newPriceDiv.value = priceDiv.textContent
+            newPriceDiv.value = data[i].price
             newListItem.replaceChild(newPriceDiv, priceDiv)
             const newAlbumImg = document.createElement("input")
             newAlbumImg.value = albumImg.src
@@ -38,7 +42,7 @@ function listData(data) {
                 newListItem.replaceChild(titleDiv, newTitleDiv)
                 descriptionDiv.textContent = newDescriptionDiv.value
                 newListItem.replaceChild(descriptionDiv, newDescriptionDiv)
-                priceDiv.textContent = newPriceDiv.value
+                priceDiv.textContent = `$ ${newPriceDiv.value}`
                 newListItem.replaceChild(priceDiv, newPriceDiv)
                 albumImg.src = newAlbumImg.value
                 newListItem.replaceChild(albumImg, newAlbumImg)
@@ -78,14 +82,20 @@ function listData(data) {
         })
         const concert = document.createElement("label")
         concert.textContent = "Seen in Concert??"
+        const concertDiv = document.createElement("div")
+        concertDiv.classList.add("concertDiv")
+        const buttonsDiv = document.createElement("div")
+        buttonsDiv.classList.add("buttonsDiv")
+        newListItem.appendChild(concertDiv)
+        concertDiv.appendChild(completedCheckbox)
+        concertDiv.appendChild(concert)
         newListItem.appendChild(titleDiv)
         newListItem.appendChild(descriptionDiv)
         newListItem.appendChild(priceDiv)
         newListItem.appendChild(albumImg)
-        newListItem.appendChild(completedCheckbox)
-        newListItem.appendChild(concert)
-        newListItem.appendChild(editButton)
-        newListItem.appendChild(deleteButton)
+        newListItem.appendChild(buttonsDiv)
+        buttonsDiv.appendChild(editButton)
+        buttonsDiv.appendChild(deleteButton)
         document.getElementById("list").append(newListItem)
         if (data[i].completed === true) {
             newListItem.style.textDecoration = "line-through"

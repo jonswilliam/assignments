@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(37, 52, 67);
+  color: white;
+  font-family: 'Dosis', sans-serif
+}
+
+.friendList {
+  display: flex;
+  justify-content: space-around;
+}
+
+.friendData {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 4px;
+  min-width: 200px;
+  background-color: grey;
+  padding: 15px
+}
+
+h4 {
+  margin: 0;
+}
+
+span {
+  color: rgb(69, 68, 68);
+}

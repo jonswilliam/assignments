@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+input, textarea, button {
+  border: 2px solid black;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.form--container, .badge--container, .badge--header, button {
+  border-radius: 7px;
+}
+
+input {
+  width: 300px
+}
+
+section {
+  display: grid;
+  place-content: center;
+  margin: 50px;
+}
+
+.form--container, .badge--container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 25px 50px;
+  border: 2px solid black;
+  margin-bottom: 25px
+}
+
+textarea {
+  grid-column: 1 / -1;
+  height: 100px
+}
+
+button {
+  grid-column: 1 / -1;
+  margin: 0 auto;
+  width: 90px
+}
+
+.badge--header {
+  grid-column: 1 / -1;
+  color: white;
+  background-color: grey;
+  padding: 6px;
+}
+
+.comments {
+  grid-column: 1 / -1;
+  height: 150px;
+  border: 2px solid black;
+  padding: 3px
+}

@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+img {
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px
+}
+
+p {
+  font-weight: bold
+}
+
+span {
+  font-weight: lighter
+}
+
+.card {
+  margin: 30px;
+  padding: 15px;
+  width: 450px;
+  border: 1px solid rgb(43, 49, 226);
+}
+
+.card--info {
+  padding-left: 25px
+}

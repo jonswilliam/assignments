@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: rgb(208, 222, 233);
+  margin: 0
+}
+
+main {
+  padding: 36px
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  background: linear-gradient(90deg, #104025 1.18%, #2aad63 100%);
+  color: white;
+  padding: 20px
+}
+
+.header--image {
+  height: 100%;
+  margin-right: 6px
+}
+
+.header--title {
+  font-size: 1.25rem;
+  margin-right: auto
+}
+
+.header--project {
+  font-size: 0.75rem;
+  font-weight: 500
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 60px / 1fr 1fr;
+  gap: 17px;
+  margin-bottom: 17px
+}
+
+.form--input {
+  font-family: "Oswald", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #104025 1.18%, #2aad63 100%);
+  color: white;
+  border: none;
+  cursor: pointer
+}
+
+.meme {
+  overflow: hidden
+}
+
+.meme--container {
+  position: relative;
+}
+
+.meme--image {
+  max-width: 100%;
+  border-radius: 3px;
+  display: block;
+	margin: 0 auto;
+  padding-bottom: 15px;
+}
+
+.meme--text {
+  position: absolute;
+  max-width: 100%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 1px 0 15px;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000
+}
+
+.bottom {
+  bottom: 0
+}
+
+.top {
+  top: 0
+}
+
+.save--meme {
+  padding: 10px;
+  font-family: "Oswald", sans-serif;
+  width: 200px;
+  font-size: 25px;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #104025 1.18%, #2aad63 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: block;
+	margin: 20px auto
+}
+
+.saved--meme {
+  position: relative
+}
+
+.saved--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 1px 0 200px;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000
+}
+
+.saved--image {
+  max-width: 100%;
+  border-radius: 3px;
+  display: block;
+	margin: 50px auto;
+  padding-bottom: 15px
+}
+
+.saved--button {
+  padding: 10px;
+  font-family: "Oswald", sans-serif;
+  width: 200px;
+  font-size: 25px;
+  border-radius: 5px;
+  background-color: #134c52;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: block;
+	margin: 20px auto
+}
+
+.edit--form {
+  display: grid;
+  grid-template: 40px / 1fr 1fr;
+  gap: 17px;
+  margin-bottom: 17px;
+}
+
+.edit-buttons {
+  display: flex;
+}
+
+.edit--cancel, .edit--save {
+  padding: 10px;
+  font-family: "Oswald", sans-serif;
+  width: 100px;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: #134c52;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.edit--save {
+  margin-right: 20px
+}
+
+.edit--cancel {
+  margin-top: 20px
+}

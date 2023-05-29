@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0
+}
+
+.header {
+  background-color: black;
+  background-image: url("./home-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 540px;
+  padding: 15px;
+  margin-bottom: 80px;
+}
+
+.header > div {
+  display: flex;
+  justify-content: center
+}
+
+.navbar--title {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.navbar--container {
+  font-size: 11px;
+  padding-top: 20px
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar h3 {
+  margin: 0 10px
+}
+
+.titleContainer {
+  grid-column: 1 / -1;
+  flex-direction: column;
+  text-align: center;
+  min-height: 300px
+}
+
+.header--title {
+  font-size: 85px;
+  font-weight: 800;
+  margin: 0
+}
+
+.header--subtitle {
+  font-weight: 300;
+  margin: 0
+}
+
+section {
+  display: grid;
+  justify-content: center;
+}
+
+.blog--list {
+  max-width: 720px;
+}
+
+.blog {
+  border-bottom: 1px solid rgb(210, 210, 210);
+  margin-bottom: 18px
+}
+
+.blog--title, .blog--subtitle {
+  font-family: "Open Sans", sans-serif;
+}
+
+.blog--title {
+  font-weight: 800;
+  font-size: 35px;
+  margin-bottom: 0
+}
+
+.blog--subtitle {
+  font-weight: 300;
+  font-size: 30px;
+  margin: 0
+}
+
+.blog--posted {
+  color: rgb(106, 106, 106);
+  font-family: "Lora", sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  margin: 10px 0 35px
+}
+
+.blog--author {
+  color: black
+}
+
+.button--container {
+  display: flex;
+  justify-content: end
+}
+
+.button {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 18px;
+  background-color: rgb(46, 140, 184);
+  border: none;
+  text-align: center;
+}
+
+footer {
+  border-top: 1px solid rgb(210, 210, 210);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  margin-top: 18px
+}
+
+.fa-brands {
+  margin: 0 15px;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 40px;
+  width: 25px;
+  text-align: center
+}
+
+.footer--text {
+  font-family: "Lora", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 18px;
+  color: rgb(106, 106, 106);
+}
